@@ -11,5 +11,5 @@ Canvas2D.prototype.drawImage = function(image, position){
     this._canvasContext.drawImage(image, position.x, position.y)
 }
 
-let _canvas = new Canvas2D();
+let Canvas = new Canvas2D();
 
