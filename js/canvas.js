@@ -6,3 +6,10 @@ function Canvas2D(){
 Canvas2D.prototype.clear = function(){
     this._canvasContext.clearRect(0, 0, this._canvas.width, this._canvas.height);
 }
+
+Canvas2D.prototype.drawImage = function(image, position){
+    this._canvasContext.drawImage(image, position.x, position.y)
+}
+
+let _canvas = new Canvas2D();
+
