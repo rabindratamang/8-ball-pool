@@ -4,7 +4,6 @@ function Game(){
 
 Game.prototype.init = function(){
     this.gameWorld = new GameWorld();
-
 }
 
 Game.prototype.start = function(){
@@ -20,6 +19,7 @@ Game.prototype.mainLoop = function(){
     Canvas.clear();
     poolGame.gameWorld.update();
     poolGame.gameWorld.draw();
+    Mouse.reset();
     requestAnimationFrame(poolGame.mainLoop)
 
 }
